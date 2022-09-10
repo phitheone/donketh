@@ -1,0 +1,21 @@
+{
+  "CONTRACT_ADDRESS": "0x4EcE540DF586Bf32618ce7430090624e746d1822",
+  "SCAN_LINK": "https://explorer.dogechain.dog/address/0x4EcE540DF586Bf32618ce7430090624e746d1822",
+  "NETWORK": {
+    "NAME": "DogeChain",
+    "SYMBOL": "wDoge",
+    "ID": 2000
+  },
+  "NFT_NAME": "Mad Doge Club",
+  "SYMBOL": "MDC",
+  "MAX_SUPPLY": 5555,
+  "WEI_COST": 99000000000000000000,
+  "DISPLAY_COST": 99,
+  "GAS_LIMIT": 285000, 
+  "MARKETPLACE": "Opensea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/the-stripes-nft",
+  "SHOW_BACKGROUND": true
+}
+
+
+

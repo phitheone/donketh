@@ -1,0 +1,201 @@
+.HSuper {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: bottom;
+  align-items: bottom;
+  padding: 0rem 0rem;
+  margin: 0px;
+  background-image: url(../../images/bghero.png);
+  background-position: center;
+  border-bottom: solid var(--color2) 4px;
+  overflow: hidden;
+
+  /* border: solid greenyellow 1px; */
+}
+
+.HContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  margin: 0px;
+  margin-top: 3rem;
+
+  /* border: solid greenyellow 1px; */
+}
+
+.HLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.HLeft img {
+  width: 80%;
+}
+
+.HRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
+  margin: 0px;
+  /* background-image: url(../../images/textbg.png); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+
+  /* border: solid greenyellow 1px; */
+}
+
+.HRContent {
+  rotate: -12deg;
+  z-index: 10;
+  height: 80%;
+  width: 70%;
+  margin-left: 2rem;
+}
+
+.TitleImg {
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.TextBgImg {
+  top: 170px;
+  position: absolute;
+  z-index: 1;
+}
+
+.HRight h1 {
+  color: var(--color4);
+  font-size: 60px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 10;
+}
+
+.HRight h2 {
+  color: var(--color1);
+  font-size: 28px;
+  z-index: 10;
+}
+
+.HRight p {
+  color: var(--color1);
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 10;
+  margin: 0px;
+  padding: 0px;
+}
+
+.HButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  /* border: solid greenyellow 1px; */
+}
+
+.HButtons img {
+  height: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.HBuyButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--color3);
+  border: solid var(--color1) 2px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-right: 25px;
+  margin-left: 0px;
+  color: var(--color1);
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.HBuyButton:hover {
+  background: var(--color1);
+  border: solid var(--color3) 2px;
+  color: var(--color3);
+}
+
+.HMintBtn {
+  position: absolute;
+  cursor: pointer;
+  z-index: 40;
+  right: calc(50vw - 85px);
+  bottom: 190px;
+  height: 180px;
+  width: 180px;
+
+  /* border: solid red 1px; */
+}
+
+.HMintBtn img {
+  height: 170px;
+  rotate: -45deg;
+  z-index: 40;
+  transition: 0.3s;
+  animation: glowy 1s linear infinite;
+
+  /* border: solid red 1px; */
+}
+
+.HMintBtn img:hover {
+  rotate: -45deg;
+  cursor: pointer;
+  filter: invert(100%);
+  transform: scale(1.1);
+  animation: tiktak2 1s linear infinite;
+  z-index: 40;
+}
+
+/* .HSocials {
+  border: solid greenyellow 1px;
+} */
+
+/*==========Media Queries==========*/
+
+@media screen and (max-width: 1025px) {
+  .HContainer {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .TextBgImg {
+    left: 0px;
+    width: 90%;
+  }
+
+  .HButtons {
+    flex-direction: column;
+  }
+
+  .HBuyButton {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .TextBgImg {
+    top: -200;
+    left: 0px;
+    width: 90%;
+    height: 500px;
+  }
+}

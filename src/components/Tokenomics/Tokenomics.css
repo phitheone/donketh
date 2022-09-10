@@ -1,0 +1,87 @@
+.TSuper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0rem;
+
+  /* border: solid greenyellow 1px; */
+}
+
+@keyframes bgcolor {
+  0% {
+    background: black;
+  }
+  33% {
+    background: rgb(58, 44, 9);
+  }
+  50% {
+    background: rgb(22, 0, 17);
+  }
+  66% {
+    background: rgb(55, 8, 8);
+  }
+  100% {
+    background: black;
+  }
+}
+
+.TContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding: 0px 0%;
+}
+
+.TCUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.TCUp h1 {
+  color: var(--color3);
+  font-size: 50px;
+}
+
+.TCUp h2 {
+  font-size: 30px;
+}
+
+.TCDown {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 290px;
+  width: 290px;
+  background-color: black;
+  border: solid var(--color3) 6px;
+  border-radius: 2rem;
+  margin: 15px;
+}
+
+.TCard img {
+  height: 80px;
+}
+
+.TCard h1 {
+  font-size: 60px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.TCard h2 {
+  font-size: 26px;
+}

@@ -1,0 +1,124 @@
+.section-header {
+  text-align: center;
+
+  /* border: solid greenyellow 1px; */
+}
+.section-header h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.section-header hr {
+  border: 1px solid #fff;
+  width: 56px;
+}
+
+.RMSuper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  /* border: solid greenyellow 1px; */
+}
+
+/*====fondo====*/
+.bg-gradient_solid {
+  /* background: var(--color3); */
+  color: var(--color3);
+  padding: 48px 0;
+  width: 70%;
+}
+.steps {
+  position: relative;
+  margin-top: 32px;
+}
+.steps::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: var(--color4);
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.steps .content p {
+  color: var(--color3);
+  font-size: 16px;
+}
+
+.steps .content h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color2);
+}
+
+.steps-container {
+  position: relative;
+  background-color: inherit;
+  width: calc(50% + 32px);
+  z-index: 20;
+}
+
+/*======CARDS======*/
+.steps-container .content {
+  padding: 32px;
+  background-color: var(--color4);
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 16px 27px rgb(0 11 30 / 10%);
+}
+
+.steps .steps-container:nth-child(even) {
+  left: calc(50% - 32px);
+  flex-direction: row-reverse;
+}
+
+.steps-container {
+  display: flex;
+}
+
+.steps .steps-container .date {
+  font-weight: 900;
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  width: 62px;
+  height: 62px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 777;
+}
+
+.step-line {
+  width: 40px;
+  background-color: var(--color4);
+  height: 1px;
+  margin-top: 31px;
+  opacity: 1;
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .steps::after {
+    left: 32px;
+  }
+  .steps-container {
+    left: 0;
+    flex-direction: row-reverse;
+    width: auto;
+    margin-bottom: 16px;
+  }
+  .steps .steps-container:nth-child(even) {
+    left: 0;
+  }
+  .bg-gradient_solid {
+    width: 95%;
+  }
+}

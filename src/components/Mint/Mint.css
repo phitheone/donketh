@@ -1,0 +1,250 @@
+.MSuper {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../images/bg.png");
+  background-position: center;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Mcontainer {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+
+  /* border: solid rgb(21, 255, 0) 1px; */
+}
+
+.Ass1 {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 70vh;
+}
+
+.Ass2 {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 70vh;
+}
+
+@media screen and (max-width: 1080px) {
+  .Ass1 {
+    opacity: 0;
+    width: 1px;
+  }
+
+  .Ass2 {
+    z-index: 0;
+    height: 20vh;
+  }
+}
+
+.ResponsiveWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem;
+
+  /* border: solid red 1px; */
+}
+
+.MLeftContainer img {
+  height: 350px;
+  margin-right: 50px;
+}
+
+.MRightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(249, 243, 163, 0.7);
+  padding: 20px 20px;
+  border-radius: 8rem;
+  border: dashed var(--color1) 3px;
+}
+
+.MRightContainer h1 {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  color: var(--color1);
+}
+
+.MRightContainer h2 {
+  padding: 0px;
+  margin: 0px;
+  color: var(--color1);
+}
+
+.MRightContainer p {
+  font-size: 20px;
+  color: var(--color1);
+}
+
+.MRightContainer span {
+  color: var(--color4);
+}
+
+.MConnectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .MConnectContainer p {
+} */
+
+.MQuantityContainer {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MQuantityContainer h1 {
+  font-size: 40px;
+}
+
+.BuyBtn {
+  animation: floating ease-in-out infinite 2s;
+}
+
+.BuyBtn:hover {
+  animation: none;
+}
+
+@keyframes floating {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.MWarningContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+
+/*=============original styles============*/
+
+.StyledButton {
+  padding: 10px;
+  border-radius: 10px;
+  border: solid var(--color2) 4px;
+  background-color: var(--color1);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color3);
+  width: 100px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.StyledButton:hover {
+  border: solid var(--color1) 4px;
+  transform: translateY(-3px);
+  background-color: var(--color2);
+  /* box-shadow: 0px 0px 12px var(--color2); */
+  color: var(--color1);
+}
+
+.StyledRoundButton {
+  padding: 10px;
+  border-radius: 100%;
+  border: none;
+  background-color: var(--color1);
+  padding: 3px;
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--color2);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0px 0px 12px var(--color2); */
+}
+
+.StyledRoundButton:hover {
+  /* box-shadow: 0px 0px 12px var(--color5); */
+}
+
+.StyledRoundButton:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.ResponsiveWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: stretched;
+  align-items: stretched;
+  width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+  .ResponsiveWrapper {
+    flex-direction: row;
+  }
+}
+
+.StyledLogo {
+  width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .StyledLogo {
+    width: 300px;
+  }
+
+  .MLeftContainer img {
+    height: 150px;
+    margin-right: 0px;
+  }
+
+  .MWarningContainer {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+.StyledImg {
+  /* box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7); */
+  border: 0px dashed var(--secondary);
+  background-color: var(--accent);
+  border-radius: 10%;
+  width: 200px;
+}
+
+@media (min-width: 900px) {
+  .StyledImg {
+    width: 250px;
+  }
+}
+@media (min-width: 1000px) {
+  .StyledImg {
+    width: 300px;
+  }
+}
+
+.StyledLink {
+  color: var(--secondary);
+  text-decoration: none;
+}

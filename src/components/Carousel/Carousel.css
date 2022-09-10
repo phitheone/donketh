@@ -1,0 +1,55 @@
+.CSuper {
+  width: 100%;
+  position: relative;
+  background-color: black;
+  /* height: 700px; */
+  /* display: flex; */
+  padding: 03em 0rem;
+  margin: 0%;
+  /* background-color: #8cb00c; */
+  /* border-top: solid black 7px; */
+  /* border-bottom: solid black 7px; */
+  z-index: 10;
+}
+
+.CSwiper {
+  cursor: grab;
+  z-index: 50;
+}
+
+.CtitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+
+/* .CTitle {
+  z-index: 100;
+  left: 45%;
+  width: 400px;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color1);
+  border: solid var(--color2) 4px;
+  border-radius: 1rem;
+  padding: 2rem 3.5rem;
+  top: -40px;
+
+  font-size: 20px;
+  color: var(--color2);
+} */
+
+.CTitle img {
+  height: 200px;
+}
+
+.SImg img {
+  border-radius: 10.5rem;
+  border: solid var(--color2) 4px;
+}
+
+@media screen and (max-width: 1100px) {
+}
