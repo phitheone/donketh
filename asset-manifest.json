@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/donketh/static/css/main.0b1f3c27.css",
+    "main.js": "/donketh/static/js/main.fc138fc0.js",
+    "static/media/ass1.png": "/donketh/static/media/ass1.2f674ad4cbba6fdbd7c1.png",
+    "static/media/ass2.png": "/donketh/static/media/ass2.e846b63b088c510b0ea9.png",
+    "static/media/logofull.png": "/donketh/static/media/logofull.121ff00bb47e045e3f81.png",
+    "static/media/head.png": "/donketh/static/media/head.35c68484aecf86a239f7.png",
+    "static/media/twitter.png": "/donketh/static/media/twitter.77de68713e8e38fcef0a.png",
+    "static/media/bg.png": "/donketh/static/media/bg.31ca3d8f18cc372f43af.png",
+    "static/media/titlew.png": "/donketh/static/media/titlew.80628ae7c6b6af81cda0.png",
+    "index.html": "/donketh/index.html",
+    "static/media/twitter.svg": "/donketh/static/media/twitter.88145f5a5efc189af7c91e0ba0dede8e.svg",
+    "main.0b1f3c27.css.map": "/donketh/static/css/main.0b1f3c27.css.map",
+    "main.fc138fc0.js.map": "/donketh/static/js/main.fc138fc0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b1f3c27.css",
+    "static/js/main.fc138fc0.js"
+  ]
+}
